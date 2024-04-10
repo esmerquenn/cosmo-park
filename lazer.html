@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>esmer</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top-container container">
+        <div class="header-top">
+          <a class="logo" href="index.html"><img src="img/cosmo.png" alt="" /></a>
+          <div class="contact-info">
+            <span class="head-span">
+              <img src="https://beautylife.ru/wp-content/themes/beautylife/images/mail.svg" alt="" />
+              <a href="mailto:info@cosmopark.az" target="_blank"> info@cosmopark.az</a>
+            </span>
+            <span class="head-span">
+              <img src="https://beautylife.ru/wp-content/themes/beautylife/images/map.svg" alt="" />
+              <a href="https://maps.app.goo.gl/64VmXB4wDzbRWb4k9" target="_blank"> 31 Cəfər Cabbarlı küçəsi, Bakı</a>
+            </span>
+            <a class="bold" href="tel:+994553601077" target="_blank">+ 994 55 360 10 77</a>
+          </div>
+          <span class="kosmotoloji"> Kosmetoloji cihazlar</span>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="container flex">
+          <span class="kataloq">Kataloq</span>
+          <div class="nav_menu">
+            <div class="search-box">
+              <input type="text" class="input-search" placeholder="Axtarış..." />
+              <div class="con"><div class="results-container"></div></div>
+              <button class="btn-search"><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="menu">
+              <li onclick="show(this)">
+                <span class="a-span"
+                  ><a href="#">Epilyasiya cihazları </a> <i class="fa-solid fa-angle-down"></i
+                ></span>
+                <div class="children">
+                  <ul>
+                    <li><a href="#">Elektroepilyasiya</a></li>
+                    <li><a href="#">Lazer epilyasiyası</a></li>
+                    <li><a href="#">Elos və foto epilyasiya</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="show(this)">
+                <span class="a-span"><a href="lazer.html">Lazerlər </a><i class="fa-solid fa-angle-down"></i></span>
+                <div class="children">
+                  <ul>
+                    <li><a onclick="goToSubCatPage('fraksional')" href="#">Fraksional lazer</a></li>
+                    <li><a onclick="goToSubCatPage('diodlazer')" href="#">Diod lazer</a></li>
+                    <li><a onclick="goToSubCatPage('')" href="#">Endolazer</a></li>
+                    <li><a onclick="goToSubCatPage('tatupling')" href="#">Tatusilmə və karbon pilinq</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="show(this)">
+                <span class="a-span"> <a href="#">Bədən şəkilləndirmə cihazları </a><i class="fa-solid fa-angle-down"></i> </span>
+                <div class="children">
+                  <ul>
+                    <li><a href="">LPG aparatları</a></li>
+                    <li><a href="">Vibromasaj aparatları</a></li>
+                    <li><a href="">Kavitasiya</a></li>
+                    <li><a href="">Vakuum çarxlı masaj aparatları</a></li>
+                    <li><a href="">Kriolipoliz</a></li>
+                    <li><a href="">Pressoterapiya</a></li>
+                    <li><a href="">Termoyorğan</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="show(this)">
+                <div class="a-span"><a href="#">Kosmetoloji cihazlar </a><i class="fa-solid fa-angle-down"></i></div>
+                <div class="children">
+                  <ul>
+                    <li><a href="">SMAS liftinq</a></li>
+                    <li><a href="">RF liftinq</a></li>
+                    <li><a href="">Kosmetoloji kombaynlar</a></li>
+                    <li><a href="">Sentrafuqa</a></li>
+                    <li><a href="">Aqua pilinq</a></li>
+                    <li><a href="">Analizator</a></li>
+                    <li><a href="">Dermabraziya</a></li>
+                    <li><a href="">Flexpot</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="show(this)">
+                <div class="a-span"><a href="#">SPA </a><i class="fa-solid fa-angle-down"></i></div>
+                <div class="children">
+                  <ul>
+                    <li><a href="">Solyari</a></li>
+                    <li><a href="">Bioenerji masaj</a></li>
+                    <li><a href="">Masaj kuşetkaları</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="bars-div" onclick="handleDogru()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container slider-container">
+        <div class="catBasliq">
+          <h3 class="h3"></h3>
+        </div>
+        <div class="owl-carousel owl-theme carouselim"></div>
+      </div>
+      <div class="container slider-container num2">
+        <div class="catBasliq">
+          <h3 class="h32"></h3>
+        </div>
+        <div class="owl-carousel owl-theme carouselim2"></div>
+      </div>
+      <div class="container slider-container num3">
+        <div class="catBasliq">
+          <h3 class="h33"></h3>
+        </div>
+        <div class="owl-carousel owl-theme carouselim3"></div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="footer">
+        <div class="elaqe">
+          <h3>Bizimlə əlaqə</h3>
+          <div class="elaqe-p">
+            <p>Tel:<a href="tel:+994553601077">+ 994 55 360 10 77</a></p>
+            <p>E-mail:<a href="mailto:info@cosmopark.az"> info@cosmopark.az</a></p>
+          </div>
+        </div>
+        <div class="naviqasiya">
+          <h3>Naviqasiya</h3>
+          <div class="naviqasiya-p">
+            <p><a href="index.html"> Ana səhifə</a></p>
+            <p><a href="#">Kataloq</a></p>
+            <p><a href="about.html">haqqımızda</a></p>
+            <div class="icon">
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="foot2">
+          <h3>Ünvan</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6078.422987780712!2d49.829551!3d40.382005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d984c80fd53%3A0xee8f61a06b7b55fd!2zMzEgQ8mZZsmZciBDYWJiYXJsxLEga8O8w6fJmXNpLCBCYWvEsQ!5e0!3m2!1saz!2saz!4v1712562203276!5m2!1saz!2saz"
+            width="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/sendToSubCategory.js"></script>
+    <script src="js/search.js"></script>
+
+    <script>
+      function goToSubCatPage(category) {
+        window.location.href = `lazer.html?cat=${category}`;
+      }
+    </script>
+  </body>
+</html>
