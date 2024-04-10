@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       carouselim.innerHTML += `<div onclick="goToDetailPage('${item.id}','${category.grupAdi}')" class="item cat-card">
       <img src="${item.mainImg}" alt="" />
       <div class="cat-card-p">
-        <p>${category.grupAdi}</p>
+        <p>${category?.grupAdi}</p>
         <h5>${item.name}</h5>
       </div>
     </div>`;
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       carouselim.innerHTML += `<div onclick="goToDetailPage('${item.id}','${name1.grupAdi}')" class="item cat-card">
       <img src="${item.mainImg}" alt="" />
       <div class="cat-card-p">
-        <p>${name.grupAdi}</p>
+        <p>${name1.grupAdi}</p>
         <h5>${item.name}</h5>
       </div>
     </div>`;
