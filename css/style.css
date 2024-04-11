@@ -360,9 +360,6 @@ footer h3 {
   padding: 20px;
   border-left: 1px solid #e3e3e3 !important;
   text-align: center;
-  &:first-child {
-    border-left: none;
-  }
   & img {
     width: 100%;
     transition: 0.4s;
