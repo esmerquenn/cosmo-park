@@ -1,5 +1,5 @@
 * {
-  font-family: "Jost regular", sans-serif;
+  font-family:  "lato", sans-serif;
 }
 .logo {
   width: 20%;
@@ -209,6 +209,7 @@
   cursor: pointer;
   color: #fff;
   border-bottom: 1px solid #c5fff3;
+  font-size: 1.1rem;
 }
 
 .result-item:hover {
@@ -311,7 +312,7 @@ footer h3 {
     margin-bottom: 6px;
   }
   & a {
-    font: 500 1rem/1.5 "Jost regular", sans-serif;
+    font: 500 1rem/1.5 "lato", sans-serif;
     margin-left: 5px;
     color: #2bd8bf;
     border-bottom: 1px solid #2bd8bf;
@@ -415,9 +416,25 @@ h4 {
   display: flex;
   justify-content: center;
 }
+
+h5 {
+  transition: 0.4s;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.owl-nav {
+  display: none;
+}
+.carouselim, .carouselim2, .carouselim3 {
+  margin-block: 10vh;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
 .cat-card {
   margin: 10px;
   transition: 0.5s;
+  /* width: 240px; */
   & img {
     background: #d7d7d7;
     width: 100%;
@@ -435,19 +452,12 @@ h4 {
   background: #fff;
   & p {
     color: #6f6f6f;
-    font: 400 1rem/1.5 "Jost regular", sans-serif;
+    font: 400 1rem/1.5 "lato", sans-serif;
   }
 }
-h5 {
-  transition: 0.4s;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-.owl-nav {
-  display: none;
-}
-.carouselim {
-  margin-block: 4vh 10vh;
+.properties{
+  line-height: 1.5;
+  color: #333;
 }
 
 .marginim {
@@ -489,7 +499,10 @@ h5 {
 .main-img {
   grid-column: 2 / span 3;
   width: 430px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   & img {
     width: 100%;
   }
@@ -662,9 +675,8 @@ h6::after {
     align-items: center;
     justify-content: space-between;
     & a {
-      font-size: 1.2rem;
       font-weight: 500 !important;
-      color: #333;
+      color: #333 ;
       transition: 0.5s;
     }
     & i {
@@ -685,7 +697,7 @@ h6::after {
     flex-direction: column;
   }
   .menu li a {
-    font-size: 1rem;
+    font-size: 1.18rem;
     font-weight: 500 !important;
     transition: 0.4s;
     color: #333;
@@ -738,7 +750,7 @@ h6::after {
     }
   }
   .input-search {
-    font: 500 1.3rem/1.5 "Jost regular", sans-serif;
+    font: 500 1.3rem/1.5 "lato", sans-serif;
     color: #333;
   }
   .input-search::placeholder {
@@ -953,8 +965,4 @@ h6::after {
     padding-inline: 15px;
   }
 }
-/* @media only screen and (max-width: 330px) {
-  .main-img img {
-    width: 230px;
-  }
-} */
+

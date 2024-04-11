@@ -3,25 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>esmer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>CosmoPark</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lightbox.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+   
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -29,7 +25,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -207,22 +202,14 @@
           });
           marginim.innerHTML = `
                 <div class="img"> 
-                    <div class="img-menu">
-                        ${kod}
-                    </div>
+                    <div class="img-menu">${kod}</div>
                     <a href=${me.mainImg} data-lightbox="models" data-title="caption5" class="main-img">
-                        <img src=${me.mainImg} alt="" />
+                      <img src=${me.mainImg} alt="" />
                     </a>
                 </div>
                 <div class="letter">
                   <h3>${me.name}</h3>
-                 <div>
-                 
-                  <div>
-      ${properties}  
-    </div>
-                 
-                  </div>
+                  <div class="properties">${properties}</div>
                 </div>`;
         } else {
         }
@@ -231,19 +218,3 @@
   </body>
 </html>
 
-<!-- <p>${me.power ? me.power : ""}</p>
-        <p>${me.height && me.height}</p>
-        <p>${me.energy && me.energy}</p>
-        <p>${me.nebz && me.nebz}</p>
-        <p>${me.basliq && me.basliq}</p>
-        <p>${me.gerginlik && me.gerginlik}</p>
-        <p>${me.soyutma && me.soyutma}</p>
-        <p>${me.atis && me.atis}</p>
-        <p>${me.leke && me.leke}</p>
-        <p>${me.lazer && me.lazer}</p> -->
-<!-- <a href="img/asclepiondermatableboz/3.png" data-lightbox="models" data-title="caption2" class="img-span">
-    <img src="img/asclepiondermatableboz/3.png" alt="" />
-  </a>
-  <a href="img/asclepiondermatableboz/4.png" data-lightbox="models" data-title="caption3" class="img-span">
-    <img src="img/asclepiondermatableboz/4.png" alt="" />
-  </a> -->

@@ -2,3 +2,11 @@
     font-family: 'Jost regular';
     src: url(../Font/Jost/static/Jost-Regular.ttf);
 }
+@font-face {
+    font-family: 'fira';
+    src: url(../Font/firamono/FiraMono-Regular.otf);
+}
+@font-face {
+    font-family: 'lato';
+    src: url(../Font/lato/Lato-Regular.ttf);
+}

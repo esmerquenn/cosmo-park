@@ -1,10 +1,10 @@
 const moreSellers = [
   { about: "", id: 0, mainImg: "img/ventus/ventus1.png", name: "Ventus Pro", grupAdi: "Diod Lazer" },
-  { about: "", id: 17, mainImg: "img/asclepionnanostar/1.png", name: "Asclepion Nanostar", grupAdi: "Tatusilme ve karbon pling" },
+  { about: "", id: 17, mainImg: "img/asclepionnanostar/1.png", name: "Asclepion Nanostar", grupAdi: "Tatusilmə ve karbon pling" },
   { about: "", id: 4, mainImg: "img/robotechpro/1.png", name: "Robotech Pro", grupAdi: "Diod Lazer" },
-  { about: "", id: 2, mainImg: "img/robotech/1.png", name: "Robotech S8", grupAdi: "Fraksional lazerler" },
+  { about: "", id: 2, mainImg: "img/robotech/1.png", name: "Robotech S8", grupAdi: "Fraksional lazerlər" },
   { about: "", id: 18, mainImg: "img/ascleponpicstar/1.png", name: "Asclepion picostar", grupAdi: "Tatusilme ve karbon pling" },
-  { about: "", id: 16, mainImg: "img/thuliumlazer/1.png", name: "Thulium laser 1927nm-catalog", grupAdi: "Fraksional lazerler" },
+  { about: "", id: 16, mainImg: "img/thuliumlazer/1.png", name: "Thulium laser 1927nm-catalog", grupAdi: "Fraksional lazerlər" },
 ];
 
 const lazerGruplari = [
@@ -288,7 +288,7 @@ const lazerGruplari = [
     ],
   },
   {
-    grupAdi: "Fraksional lazerler",
+    grupAdi: "Fraksional lazerlər",
     gruptag: "fraksional",
     grupItem: [
       {
@@ -338,14 +338,14 @@ const lazerGruplari = [
       },
       {
         mainImg: "img/erbiumlazeryaglazer/1.png",
-        about: `Pluser ile yaln1zca zamana ayak uydurmay1n, ritmi siz belirleyin! 
-        Pluser, geleneksel di� hekimligi uygulamas1na yeni Ьir soluk getirecek olan ileri 
-        teknoloji urunu Er:Yag laser cihaz1d1r. ErЬium laser teknolojisi, ki�iye gore ozel 
-        ayarlanaЬilen parametreleri sayesinde Ьir gok durumda anestezi ihtiyac1 olmadan, 
-        daha h1zl1 ve daha kolay tedavi segenegi sunar. Kullan1c1ya yumu�ak dokuda, 
-        sert dokuda ve kemik cerrahisinde kolay Ьir �ekilde gal1�ma olanag1 saglar. H1zl1 
-        iyile�me sureleri, selektif doku etkile�imi, minimum invaziv cerrahi, maksimum 
-        hasta konforu ile laser destekli di� hekimliginin vazgegilmez arac1d1r`,
+        about: `Pluser ile yalnızca zamana ayak uydurmayın, ritmi siz belirleyin! 
+        Pluser, geleneksel diş hekimligi uygulamasına yeni Ьir soluk getirecek olan ileri 
+        teknoloji urunu Er:Yag laser cihazıdır. ErЬium laser teknolojisi, kişiye gore ozel 
+        ayarlanaЬilen parametreleri sayesinde Ьir gok durumda anestezi ihtiyacı olmadan, 
+        daha hızlı ve daha kolay tedavi segenegi sunar. Kullanıcıya yumuşak dokuda, 
+        sert dokuda ve kemik cerrahisinde kolay Ьir şekilde galışma olanagı saglar. Hızlı
+        iyileşme sureleri, selektif doku etkileşimi, minimum invaziv cerrahi, maksimum 
+        hasta konforu ile laser destekli diş hekimliginin vazgegilmez aracıdır`,
         id: 13,
         imgs: ["img/erbiumlazeryaglazer/1.png", "img/erbiumlazeryaglazer/2.png", "img/erbiumlazeryaglazer/3.png"],
         name: "Erbium Lazer-yag-laser",
