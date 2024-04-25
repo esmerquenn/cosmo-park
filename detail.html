@@ -47,7 +47,7 @@
       </div>
 
       <nav class="navbar">
-        <div class="container flex">
+        <div class=" flex">
           <span class="kataloq">Kataloq</span>
           <div class="nav_menu">
             <div class="search-box">
@@ -190,7 +190,7 @@
           let me = esmer.grupItem.find((item) => item.id == id);
           let kod = "";
           me.imgs.forEach((item) => {
-            kod += `<a href=${item} data-lightbox="models" data-title="caption1" class="img-span">
+            kod += `<a href=${item} data-lightbox="models" class="img-span">
                         <img src=${item} alt="" />
                         </a>`;
           });
@@ -203,7 +203,7 @@
           marginim.innerHTML = `
                 <div class="img"> 
                     <div class="img-menu">${kod}</div>
-                    <a href=${me.mainImg} data-lightbox="models" data-title="caption5" class="main-img">
+                    <a href=${me.mainImg} data-lightbox="models"  class="main-img">
                       <img src=${me.mainImg} alt="" />
                     </a>
                 </div>

@@ -1,5 +1,5 @@
 * {
-  font-family:  "lato", sans-serif;
+  font-family: "lato", sans-serif;
 }
 .logo {
   width: 20%;
@@ -11,7 +11,7 @@
   margin-block: 10vh !important;
 }
 .container {
-  width: 85%;
+  width: 93%;
   margin: auto;
 }
 
@@ -87,8 +87,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   & ul {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +106,7 @@
   border-right: 1px solid #c5efff79;
   display: flex;
   position: relative;
-  padding-inline: 20px;
+  padding-inline: 30px;
 }
 
 .children {
@@ -134,7 +135,7 @@
 
 .search-box {
   position: absolute;
-  right: 33px;
+  right: 70px;
   order: 3;
   display: flex;
   height: 100%;
@@ -144,6 +145,7 @@
   justify-content: center;
   width: 0;
   transition: transform 1s, width 1s;
+  border-right: 1px solid #c5efff79;
 }
 
 .input-search {
@@ -164,15 +166,25 @@
   background: none;
   color: #fff;
   font-size: 1.3rem;
+  position: relative;
+  & i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 .width {
-  width: 20%;
+  width: 20%; & input {
+    font-size: 1.3rem;
+  }
+ 
+}
+.pah {
+  transform: translateX(-14%);
   & input {
     font-size: 1.3rem;
   }
-}
-.pah {
-  transform: translateX(-20%);
 }
 .menu {
   transition: 1s;
@@ -305,7 +317,6 @@ h3 {
   color: rgb(51, 51, 51);
 }
 footer h3 {
-  
 }
 .elaqe-p {
   & p {
@@ -394,7 +405,9 @@ h4 {
   justify-content: space-between;
   align-items: center;
   margin-block: 20px;
-  & h3{margin: 0 !important;}
+  & h3 {
+    margin: 0 !important;
+  }
 }
 .btn-kataloq {
   border: none;
@@ -422,7 +435,9 @@ h5 {
 .owl-nav {
   display: none;
 }
-.carouselim, .carouselim2, .carouselim3 {
+.carouselim,
+.carouselim2,
+.carouselim3 {
   margin-block: 10vh;
   display: grid;
   row-gap: 30px;
@@ -452,7 +467,7 @@ h5 {
     font: 400 1rem/1.5 "lato", sans-serif;
   }
 }
-.properties{
+.properties {
   line-height: 1.5;
   color: #333;
 }
@@ -554,20 +569,16 @@ h6::after {
 }
 
 @media only screen and (max-width: 1440px) {
-  .menu > li {
-    padding-inline: 10px;
-  }
-}
-@media only screen and (max-width: 1320px) {
   .search-box {
-    right: 14px;
+    right: 50px;
   }
+  .menu > li {
+    padding-inline: 20px;
+  }
+  .btn-search i{right: 30px}
 }
-@media only screen and (max-width: 1280px) {
-  .container {
-    width: 90%;
-  }
 
+@media only screen and (max-width: 1280px) {
   .sliderMe {
     height: 60vh;
   }
@@ -577,19 +588,34 @@ h6::after {
       display: none;
     }
   }
-  .menu > li {
-    padding-inline: 5px;
+  .search-box {
+    right: 10px;
   }
+  .menu{
+    width: 100%;
+  }
+  .menu > li {
+    padding-inline: 15px;
+  }
+ 
 }
 
 @media only screen and (max-width: 1165px) {
   .menu > li {
-    padding-inline: 0;
+    padding-inline: 10px;
   }
+  .search-box {
+    right: 0;
+  }
+  .btn-search i{right: 20px}
+
 }
 @media only screen and (max-width: 1100px) {
+  .menu > li {
+    padding-inline: 7px;
+  }
   .a-span a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -611,6 +637,7 @@ h6::after {
   }
   .flex {
     overflow-x: auto;
+    padding-inline: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -673,7 +700,7 @@ h6::after {
     justify-content: space-between;
     & a {
       font-weight: 500 !important;
-      color: #333 ;
+      color: #333;
       transition: 0.5s;
     }
     & i {
@@ -761,7 +788,7 @@ h6::after {
     letter-spacing: 0.5px;
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 20px;
+    padding-block: 20px;
   }
 
   .bars-div {
@@ -962,4 +989,3 @@ h6::after {
     padding-inline: 15px;
   }
 }
-
